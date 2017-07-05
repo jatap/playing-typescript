@@ -1,1 +1,3 @@
-console.log("Sample application to play with TypeScript");
+const message = "Sample application to play with TypeScript";
+
+export { message };
