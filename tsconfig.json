@@ -9,13 +9,14 @@
     "removeComments": true,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "target": "es5"
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "node_modules",
-    "**/*-spec.ts"
+    "**/*spec.ts"
   ]
 }

@@ -1,1 +1,1 @@
-export * from "./greeter";
+console.log("Sample application to play with TypeScript");
