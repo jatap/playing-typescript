@@ -1,6 +1,6 @@
 {
-  "name": "sample-node-typescript",
-  "version": "0.0.0",
+  "name": "playing-typescript",
+  "version": "1.0.0",
   "description": "sample-node-typescript",
   "license": "MIT",
   "repository": "",
@@ -17,8 +17,8 @@
     "clean": "rimraf lib",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "build": "npm run clean && npm run lint && echo Using TypeScript && tsc --version && tsc --pretty",
-    "test": "npm run build && mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'",
-    "coverage": "nyc --include='src/**/*.ts' --reporter=text --reporter=html --reporter=lcov mocha --compilers ts:ts-node/register --recursive 'test/**/*.test.ts'",
+    "test": "npm run build && mocha --compilers ts:ts-node/register --recursive 'test/**/*.spec.ts'",
+    "coverage": "nyc --include='src/**/*.ts' --reporter=text --reporter=html --reporter=lcov mocha --compilers ts:ts-node/register --recursive 'test/**/*spec.ts'",
     "watch": "npm run build -- --watch",
     "watch:test": "npm run test -- --watch"
   },

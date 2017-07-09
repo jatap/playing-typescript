@@ -1,4 +1,25 @@
-coverage/
+# Dependencies
 node_modules/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Misc
 npm-debug.log
-.nyc_output
+.nyc_output/
+coverage/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# JS files
+lib/
+src/**/*.js
+
+# Coverage
+coverage/
