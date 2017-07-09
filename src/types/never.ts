@@ -8,10 +8,14 @@ function fail() {
     return error("Something failed");
 }
 
-// Function returning never must have unreachable end point
+/**
+ * Function returning never must have unreachable end point
+ */
+/*
 function infiniteLoop(): never {
     // tslint:disable-next-line:no-empty
     while (true) {}
 }
+*/
 
-export { error, fail, infiniteLoop };
+export { error, fail };
